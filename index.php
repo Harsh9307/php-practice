@@ -82,6 +82,27 @@
     <?php echo "Styled Output: " . ($x * $y); ?>
 </div>
 
+<?php
+    class ParentClass {
+        protected $message = "Hi from parent";
+    
+        public function greet() {
+            return $this->message;
+        }
+    }
+    
+    class ChildClass extends ParentClass {
+        public function changeMessage($newMessage) {
+            $this->message = $newMessage;
+        }
+    }
+    
+    $child = new ChildClass();
+    $child->changeMessage("Hi from child");
+    echo $child->greet();
+    
+?>
+
 
 
 
