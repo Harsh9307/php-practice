@@ -33,4 +33,12 @@
         $y = $_POST['y'];
         echo "x: $x, y: $y, Product: " . ($x * $y);
     }
+?> 
+<!-- query params -->
+
+<?php
+    $x = $_GET['x'] ?? 0;
+    $y = $_GET['y'] ?? 0;
+    echo "x: $x, y: $y, Product: " . ($x * $y);
+    // Access via: example.com?page.php?x=5&y=10
 ?>
