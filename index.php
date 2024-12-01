@@ -39,6 +39,26 @@
 <?php
     $x = $_GET['x'] ?? 0;
     $y = $_GET['y'] ?? 0;
-    echo "x: $x, y: $y, Product: " . ($x * $y);
-    // Access via: example.com?page.php?x=5&y=10
+
+    echo "x: $x, y: $y, Product: " . ($x * $y) . "<br>"; // Using <br> for a new line in the browser.
+
+    $text = "Hello World";
+
+    echo strtolower($text) . "<br>"; // hello world
+    echo strtoupper($text)."<br>"; // HELLO WORLD
+
+    $z = $x * $y;
+    if ($z > 50) {
+        echo "Product is large." . "<br>";
+    } else {
+        echo "Product is small."."<br>";
+    }
+
+    for ($i = 1; $i <= $x; $i++) {
+        echo "$i x $y = " . ($i * $y) . "<br>";
+    }
 ?>
+
+
+
+
