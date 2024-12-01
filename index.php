@@ -104,6 +104,24 @@
 ?>
 
 
+<?php
+    $foo = 'bar';
+    $$foo = 'baz';
+
+    echo $foo ,' ',$bar;
+    echo "<br>"."$foo {$$foo}"
+?>
+
+
+<!-- **************************** TyepeCasting ************************ -->
+ <!-- Dynamically Typed - TyepeCasting happens at runtime -->
+ <!-- Statiscally Typed - TyepeCasting happens at compiletime -->
+
+<?php
+    $companies = ['A','B',1,2,true];
+    
+
+
 
 
 
